@@ -38,4 +38,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tsubasa.mk \
     $(LOCAL_DIR)/umtsspyder.mk \
     $(LOCAL_DIR)/vs920.mk \
+    $(LOCAL_DIR)/geeb_att_us.mk \
     $(LOCAL_DIR)/yuga.mk

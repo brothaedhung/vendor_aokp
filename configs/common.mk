@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
-    UnicornPorn
+    UnicornPorn \
+    Halo
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -72,6 +73,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Antimony.ogg \
     ro.config.alarm_alert=Scandium.ogg
 
+
+# Custom Packages
+#PRODUCT_PACKAGES += \
+#        libcyanogen-dsp \
+#        audio_effects.conf
+#        Music \
+#        CMFileManager \
+#        CellBroadcastReceiver \
+#        Apollo \
+#        JellyBlue_X \
+#        DSPManager 
+
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Inherit common build.prop overrides
@@ -81,5 +94,5 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 -include vendor/aokp/configs/themes_common.mk
 
 # common boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+#PRODUCT_COPY_FILES += \
+#    vendor/aokp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
